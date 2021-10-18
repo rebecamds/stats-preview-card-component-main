@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    font-family: 'Inter', sans-serif !important;
+}
+
+html,
+body {
+    background-color: #000000;
+    height: 100%;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.site {
+    width: calc(100% - 15px - 15px);
+    height: calc(100% - 15px - 15px);
+    display: flex;
+    padding: 15px;
+}
+
+.site .header {
+
+    margin: auto;
+    display: block;
+    background: #733f92;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1115px;
+
+
+}
+
+@media only screen and (min-width: 600px) {
+    .site .header {
+        display: grid;
+        grid-template-columns: 580px auto;
+        height: 437px;
+
+    }
+}
+
+.site .header .main {
+    text-align: justify left;
+    min-height: calc(437px - 77px - 62px);
+    background: #1c1938;
+    padding: 77px 124px 62px 65px;
+    
+
+ 
+}
+
+.site .header .main h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 33px;
+}
+
+.roxo {
+    color: rgb(149, 108, 190);
+}
+
+.site .header .main p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 84px;
+    line-height: 150%;
+}
+
+.site .header .main .numbers {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    gap: 25px;
+   
+}
+
+@media only screen and (min-width: 600px) {
+    .site .header .main .numbers {
+        width: 100%;
+        text-align: left;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 80px;
+
+    }
+}
+
+.site .header .main .numbers .dez {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.site .header .main .numbers .dez span {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 200;
+    display: block;
+}
+
+.site .header .image {
+    background-image: url(./images/image-header-desktop.jpg);
+    background-blend-mode: multiply;
+    opacity: 30%;
+    width: 100%;
+    height: 437px;
+
+}
+.site .header .image.image-top{
+    display: block;
+}
+
+.site .header .image.image-bot{
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    .site .header .image.image-top{
+        display: none;
+    }
+    
+    .site .header .image.image-bot{
+        display: block;
+    }
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\intro-component-with-signup-form-master"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "stats-preview-card-component-main"
+	}
+}
